@@ -6,6 +6,7 @@ import PlayerBar from "./components/PlayerBar";
 import { Col, Container, Row } from "react-bootstrap";
 import SideBarVertical from "./components/SideBarVertical";
 import AlbumPage from "./components/AlbumPage";
+import ArtistPage from "./components/ArtistPage";
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/album-page/:albumId" element={<AlbumPage />} />
+                <Route path="/artist-page/:artistId" element={<ArtistPage />} />
               </Routes>
             </Col>
           </Row>

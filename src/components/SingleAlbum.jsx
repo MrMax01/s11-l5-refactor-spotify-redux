@@ -14,7 +14,7 @@ const SingleAlbum = (props) => {
             : `${props.songInfo.album.title.substring(0, 16)}...`}
           "
         </Link>
-        <Link to="/">Artist: {props.songInfo.artist.name}</Link>
+        <Link to={"/artist-page/" + props.songInfo.artist.id}>Artist: {props.songInfo.artist.name}</Link>
       </p>
     </div>
   );
