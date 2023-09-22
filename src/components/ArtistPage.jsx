@@ -71,7 +71,7 @@ const ArtistPage = () => {
                   tracks.length > 0 &&
                   tracks.map((track) => (
                     <Col className="col-sm-auto col-md-auto text-center mb-5" key={track.id}>
-                      <Link to={"/album-page" + track.album.id}>
+                      <Link to={"/album-page/" + track.album.id}>
                         <img
                           className="img-fluid"
                           src={
